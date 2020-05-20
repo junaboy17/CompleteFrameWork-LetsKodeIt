@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="smoke test">
+	<test name="annotation test">
+		<classes>
+			<class name="testNGTest.LogInTest"></class>
+			<class name="testNGTest.LogOutTest"></class>
+			
+		</classes>
+	</test>
+</suite>
