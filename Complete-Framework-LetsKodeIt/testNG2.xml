@@ -4,7 +4,7 @@
 	<test name="annotation test">
 		<classes>
 			<class name="testNGTest.LogInTest"></class>
-		<!-- <class name="testNGTest.LogOutTest"></class> -->	
+		    <class name="testNGTest.LogOutTest"></class>	
 		</classes>
 	</test>
 </suite>

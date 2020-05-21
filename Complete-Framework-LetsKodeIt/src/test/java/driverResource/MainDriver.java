@@ -5,9 +5,13 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 public class MainDriver {
 	
 	public static WebDriver driver;
+	
 	
 	public void openBrowser(String browser, String website) {
 		
