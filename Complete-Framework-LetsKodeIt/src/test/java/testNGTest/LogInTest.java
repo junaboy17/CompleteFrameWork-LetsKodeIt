@@ -4,6 +4,9 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 import driverResource.Util;
 import functions.HomePageFunction;
 import functions.LogInPageFunctions;
@@ -19,6 +22,10 @@ public class LogInTest extends Util{
 	
 	@Test
 	public void veryifyLogIn() {
+		ExtentReports report;
+		ExtentTest test;
+		report = new ExtentReports("C:\\Users\\junab\\Documents\\Extent Report\\LongIn.html");
+		test = report.startTest("Verify Log In Test");
 		openBrowser("chrome", "https://learn.letskodeit.com/");
 		clickElement(hpx.logInButton);
 		lif.enterEmailPassAndLogIn();
